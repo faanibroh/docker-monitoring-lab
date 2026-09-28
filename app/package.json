@@ -1,0 +1,13 @@
+{
+  "name": "docker-monitoring-demo",
+  "version": "1.0.0",
+  "description": "Dummy application for Docker monitoring, logging and SonarQube",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
