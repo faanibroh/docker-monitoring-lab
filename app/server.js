@@ -94,7 +94,7 @@ app.get("/", (req, res) => {
 
         <head>
 
-            <title>Docker Monitoring Demo</title>
+            <title>Docker Monitoring Demo - CI/CD v2</title>
 
             <style>
 
@@ -130,7 +130,7 @@ app.get("/", (req, res) => {
 
             <div class="container">
 
-                <h1>Docker Monitoring Demo</h1>
+                <h1>Docker Monitoring Demo - CI/CD v2</h1>
 
                 <p>Application is running successfully.</p>
 
