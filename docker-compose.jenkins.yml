@@ -1,5 +1,9 @@
 services:
 
+  dummy-app:
+    volumes:
+      - app_logs:/app/logs
+
   prometheus:
     volumes:
       - "D:/DEVOPS LEARNING/docker-monitoring-lab/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro"
