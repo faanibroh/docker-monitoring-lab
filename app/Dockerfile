@@ -50,6 +50,8 @@ COPY package*.json ./
 
 COPY server.js ./
 
+RUN mkdir -p /app/logs && chown -R node:node /app
+
 EXPOSE 4500
 
 USER node
