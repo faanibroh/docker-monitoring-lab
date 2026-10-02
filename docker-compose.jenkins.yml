@@ -6,16 +6,21 @@ services:
 
   prometheus:
     volumes:
-      - "D:/DEVOPS LEARNING/docker-monitoring-lab/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro"
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
 
   loki:
     volumes:
-      - "D:/DEVOPS LEARNING/docker-monitoring-lab/loki/loki-config.yml:/etc/loki/loki-config.yml:ro"
+      - ./loki/loki-config.yml:/etc/loki/loki-config.yml:ro
       - loki_data:/loki
 
   promtail:
     volumes:
-      - "D:/DEVOPS LEARNING/docker-monitoring-lab/promtail/promtail-config.yml:/etc/promtail/promtail-config.yml:ro"
+      - ./promtail/promtail-config.yml:/etc/promtail/promtail-config.yml:ro
       - /var/lib/docker/containers:/var/lib/docker/containers:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - promtail_positions:/tmp
+
+volumes:
+  app_logs:
+  loki_data:
+  promtail_positions:

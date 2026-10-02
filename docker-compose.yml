@@ -84,7 +84,6 @@ services:
       - "50000:50000"
     volumes:
       - jenkins_home:/var/jenkins_home
-      - "D:/DEVOPS LEARNING/docker-monitoring-lab:/workspace/docker-monitoring-lab"
       - /var/run/docker.sock:/var/run/docker.sock
     group_add:
       - "0"
