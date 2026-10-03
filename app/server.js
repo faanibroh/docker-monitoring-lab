@@ -94,7 +94,7 @@ app.get("/", (req, res) => {
 
         <head>
 
-            <title>Docker Monitoring Demo - CI/CD v2</title>
+            <title>Docker Monitoring Demo - CI/CD v3</title>
 
             <style>
 
@@ -130,9 +130,9 @@ app.get("/", (req, res) => {
 
             <div class="container">
 
-                <h1>Docker Monitoring Demo - CI/CD v2</h1>
+                <h1>Docker Monitoring Demo - CI/CD v3</h1>
 
-                <p>Application is running successfully.</p>
+                <p>Automatically deployed by Jenkins after Github push.</p>
 
                 <p>Container: dummy-app</p>
 
