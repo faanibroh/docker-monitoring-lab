@@ -21,6 +21,10 @@ services:
     container_name: node-exporter
     ports:
       - "9100:9100"
+    command:
+      - '--path.rootfs=/host'
+    volumes:
+      - '/:/host:ro,rslave'
     restart: unless-stopped
 
   prometheus:
@@ -87,6 +91,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     group_add:
       - "0"
+      - "988"
     restart: unless-stopped
 
 volumes:
